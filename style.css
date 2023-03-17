@@ -17,6 +17,63 @@ body{
     box-sizing: border-box;
     margin: 0;
     max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-area: 'nav nav nav nav'
+    'hero hero hero hero'
+    'transform-body transform-body transform-photo transform-photo'
+    'stand-photo stand-photo stand-body stand-body'
+    'design design photo photo'
+    'clients clients clients clients'
+    'one two three four'
+    'footer footer footer footer';
+}
+.nav{
+    grid-area: nav;
+}
+.hero{
+    grid-area: hero;
+}
+.transform-body{
+    grid-area: transform-body;
+}
+.transform-photo{
+    grid-area: transform-photo;
+}
+.stand-photo{
+    grid-area:stand-photo;
+}
+.stand-body{
+    grid-area: stand-body;
+}
+.design{
+    grid-area: design;
+}
+.photo{
+    grid-area: photo;
+}
+.clients{
+    grid-area: clients;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area:four;
+}
+.top-hero{
+    background-image: url(/images/desktop/image-header.jpg);
+    width: 1440px;
+    height: 800px;
+}
+.nav{
+    display: flex;
 }
 
 .attribution{ 
